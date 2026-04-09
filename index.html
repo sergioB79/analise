@@ -3,12 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chart Analysis — 2026-04-09 00:50 UTC</title>
+<title>Chart Analysis — 2026-04-09</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body { background:#0d0d0d; color:#e8e6e0; font-family:monospace; font-size:13px; line-height:1.7; padding:32px; }
   h1 { font-size:22px; font-weight:700; color:#c8f060; margin-bottom:4px; }
-  .timestamp { color:#4a4a4a; font-size:11px; margin-bottom:40px; }
+  .timestamp { color:#4a4a4a; font-size:11px; margin-bottom:16px; }
+  .cost-bar { display:flex; align-items:center; gap:12px; background:#141414; border:1px solid #2a2a2a; border-radius:8px; padding:10px 16px; margin-bottom:32px; font-size:12px; }
+  .cost-label { color:#6b6b6b; }
+  .cost-detail { color:#4a4a4a; flex:1; }
+  .cost-total { color:#c8f060; font-weight:700; font-size:14px; }
   h2 { font-size:14px; font-weight:600; color:#c8f060; margin:32px 0 16px; letter-spacing:0.05em; text-transform:uppercase; }
   .macro { background:#141414; border:1px solid #2a2a2a; border-radius:10px; padding:20px 24px; margin-bottom:40px; white-space:pre-wrap; }
   .asset-card { background:#141414; border:1px solid #2a2a2a; border-radius:10px; padding:20px 24px; margin-bottom:16px; }
@@ -16,72 +20,90 @@
   .asset-name { font-size:16px; font-weight:700; color:#e8e6e0; }
   .asset-tfs { display:flex; gap:6px; }
   .pill { background:#1a1a1a; border:1px solid #333; border-radius:20px; padding:2px 10px; font-size:10px; color:#888; }
+  .thumbs { display:flex; gap:10px; margin-bottom:16px; flex-wrap:wrap; }
+  .thumb-link { display:flex; flex-direction:column; align-items:center; gap:4px; text-decoration:none; }
+  .thumb { width:180px; height:110px; object-fit:cover; border-radius:6px; border:1px solid #2a2a2a; transition:border-color 0.15s; }
+  .thumb:hover { border-color:#c8f060; }
+  .thumb-label { font-size:10px; color:#6b6b6b; }
   .asset-report { white-space:pre-wrap; color:#c0bdb7; font-size:12px; }
-  .footer { margin-top:40px; color:#333; font-size:11px; text-align:center; }
+  .footer { margin-top:40px; color:#333; font-size:11px; text-align:center; border-top:1px solid #1a1a1a; padding-top:16px; }
 </style>
 </head>
 <body>
 <h1>Chart Analysis Pipeline</h1>
-<div class="timestamp">Gerado em 2026-04-09 00:50 UTC</div>
+<div class="timestamp">Gerado em 2026-04-09 02:20 UTC</div>
+
+    <div class="cost-bar">
+        <span class="cost-label">Custo deste run</span>
+        <span class="cost-detail">Haiku $0.0051 · Sonnet $0.1123</span>
+        <span class="cost-total">$0.1174</span>
+    </div>
 <h2>Visão Macro</h2>
-<div class="macro"># MACRO SYNTHESIS | 09 Abr 2026
+<div class="macro"># SÍNTESE MACRO — 09 Abr 2026 · 03:15 UTC+1
 
 ---
 
 ## 1. AMBIENTE GERAL
-**MISTO com viés risk-off moderado**
-USD em pressão estrutural (EUR força), equities europeias em rally correctivo dentro de bear macro. Não é risk-on limpo — é rotação/reposicionamento institucional pós-stress.
+**RISK-OFF dominante** com recuperação técnica de curto prazo em curso. O ouro está em estrutura bearish activa mas com bounce intraday — sugere flight-to-quality parcialmente revertido ou short-covering técnico, não mudança de regime.
 
 ---
 
 ## 2. CORRELAÇÕES
-- **USD fraco** suporta ambos: EUR/USD bullish estrutural + GER40 rally (ativos denominados em EUR ganham brilho relativo)
-- Ambos os assets mostram **pullback técnico activo** após movimento extremo — EUR desde 1.1721, GER40 desde 21.850
-- **Institucional cauteloso**: COT longo em EUR mas GER40 sem CVD confirmatório — acumulação selectiva, não broad risk-on
+- Estrutura multi-TF bearish confirmada (BOS 1H/1D + ADX 40+ DI- dominante)
+- POC 4.658–4.663 como magnete de preço em todos os timeframes — consenso técnico forte
+- CVD negativo persistente valida ausência de acumulação real — pressão vendedora estrutural não resolvida
 
 ---
 
 ## 3. DIVERGÊNCIAS
-- GER40 rally **sem convicção de fluxo** (CVD negativo) vs. EUR/USD com acumulação institucional real → desconexão perigosa
-- EUR/USD correctivo de curto prazo (bearish 15M) enquanto GER40 sobe no 4H — movimentos dessincronizados
-- GER40 ainda abaixo de EMA200 1D; EUR/USD já em território de extensão bullish → força relativa muito diferente
+- Bounce 15M (CHoCH bullish + EMA crossover + preço acima VWAP) contradiz o bias superior
+- StochRSI 15M em 92 — rally estendido, não sustentável; divergência temporária, não reversão
+- Tensão entre recuperação técnica local e tendência diária bearish cria janela de entrada, não de inversão
 
 ---
 
 ## 4. OPORTUNIDADES
 
-🥇 **EUR/USD Long Scalp** — 1.1590–1.1610
-Maior qualidade. Confluência máxima (OB+FVG+POC+EMA50). Activação: rejeição com Stoch RSI bullish cross. R:R favorável.
+**#1 — SCALP SHORT XAU/USD** *(maior qualidade imediata)*
+Zona 4.740–4.760 com rejeição confirmada. R/R favorável, setup activado por delta negativo + StochRSI a cruzar abaixo de 80.
 
-🥈 **GER40 Short Scalp** — 24.000–24.050
-Resistência crítica múltipla. CVD fraco valida rejeição. TP natural em 23.107. Aguardar vela confirmação.
+**#2 — SWING SHORT XAU/USD**
+Reteste 4.820–4.855 (OB bearish 1H). Entrada de maior convicção estrutural. TP1: 4.663 / TP2: 4.580.
 
-🥉 **EUR/USD Swing Long** — reclaim 1.1650
-Entrada diferida mas maior convicção. Confirmação CHoCH 15M + VWAP reclaim abre 1.1710–1.1780.
+**#3 — AGUARDAR POSIÇÃO**
+Sem long estrutural válido. Cash/neutralidade é posição legítima abaixo de 4.905.
 
 ---
 
 ## 5. RISCOS DO DIA
-- **Notícia tarifas/BCE** → gap > 200 pips/300 pts invalida todos os setups técnicos instantaneamente
-- EUR/USD fecha **abaixo de 1.1540** → macro bullish comprometido
-- GER40 fecha **acima de 24.240** → bear tese invalidada, squeeze violento possível
-- Liquidez reduzida em sessão asiática amplifica falsos rompimentos</div>
+- Fecho diário **acima de 4.905** invalida todo o bias bearish
+- CVD reverter positivo sustentado no 1H — sinal de alerta imediato
+- Evento macro não antecipado (Fed, geopolítica) pode absorver liquidez vendedora e acelerar squeeze
+
+---
+**Nota:** Análise baseada exclusivamente em XAU/USD. Síntese multi-asset completa requer dados adicionais.</div>
 <h2>Assets</h2>
 
         <div class="asset-card">
             <div class="asset-header">
-                <span class="asset-name">EURUSD</span>
+                <span class="asset-name">XAUUSD</span>
                 <span class="asset-tfs"><span class="pill">15M</span> <span class="pill">1H</span> <span class="pill">1D</span></span>
             </div>
-            <div class="asset-report"># EUR/USD — ANÁLISE CONSOLIDADA | 09 Abr 2026<br><br>---<br><br>## 1. BIAS GERAL<br>**Bullish com correção intra-dia** | Convicção: **Média**<br><br>Macro bullish (1D/1H) mas distribuição local no 15M após ATH 1.1721. Correção em curso — draw para 1.1580–1.1620 antes de retomada.<br><br>---<br><br>## 2. CONFLUÊNCIAS<br>- **Bullish estrutural** nos 3 TFs: BOS/CHoCH bullish confirmados em 1H e 1D; squeeze momentum verde no diário<br>- **Zona 1.1580–1.1620** = OB bullish 1H + FVG 15M + POC volumétrico + EMA 50 (1H) → suporte major confluente<br>- **1.1650** = VWAP ancorada (15M + 1H) + base Kumo 1D + EQL local → decisivo imediato<br>- **Institucional long** em construção (COT Non-Comm acumulando há 6–8 semanas)<br>- **Zona 1.1680–1.1720** = resistência em todos os TFs (OB bearish 15M + Supply 1H + Kijun/Kumo 1D)<br><br>---<br><br>## 3. DIVERGÊNCIAS<br>- **15M bearish** (CHoCH confirmado, EMA9<21, preço abaixo VWAP) vs **1H/1D bullish** estrutural<br>- **Stoch RSI 15M em sobrevenda extrema** (K:25/D:11) sugere bounce iminente — contradiz momentum bearish de curto prazo<br>- Volume delta 15M misto com ligeira dominância compradora — possível armadilha ou acumulação furtiva<br><br>---<br><br>## 4. NÍVEIS-CHAVE<br>| Tipo | Nível | Relevância |<br>|------|-------|------------|<br>| Resistência | 1.1721 | EQH / ATH / liquidity high |<br>| Resistência | 1.1680–1.1710 | OB bearish 15M + Supply 1H |<br>| **Campo de batalha** | **1.1650** | VWAP + Kumo base + EQL |<br>| Suporte | 1.1580–1.1620 | OB 1H + FVG 15M + POC |<br>| Suporte major | 1.1411 | Mínimo absoluto 8 Abr |<br><br>---<br><br>## 5. SETUPS<br><br>**SCALP — Long Rebound**<br>- **Entrada:** 1.1590–1.1610 (FVG + OB confluente)<br>- **SL:** 1.1555 (~55 pips, abaixo EMA200 1H)<br>- **TP1:** 1.1650 | **TP2:** 1.1680<br>- **Activação:** Stoch RSI 15M cruzar bullish + vela de rejeição no suporte<br><br>**SWING — Long Pullback**<br>- **Entrada:** 1.1580–1.1620 (OB 1H + FVG)<br>- **SL:** 1.1540<br>- **TP1:** 1.1710 | **TP2:** 1.1780<br>- **Activação:** Reclaim da VWAP 1H + CHoCH bullish no 15M<br><br>**POSITION — Bias Long**<br>- Acumular em pullbacks para 1.1500–1.1580; confirmação CHoCH 1D acima de 1.1650 abre extensão para 1.1750+<br><br>---<br><br>## 6. INVÁLIDO SE<br>- Quebra **diária abaixo de 1.1540** (invalida OB 1H e estrutura correctiva)<br>- Fecho 1H **abaixo de 1.1500** → retorno ao bearish macro<br>- Rejeição em 1.1650 com vela bearish forte + volume → SHORT scalp para 1.1595</div>
+            <div class="thumbs">
+                <a href="https://raw.githubusercontent.com/sergioB79/analise/main/imagens/2026-04-09/XAUUSD_2026-04-09_03-15-05_09ea5.png" target="_blank" class="thumb-link">
+                    <img src="https://raw.githubusercontent.com/sergioB79/analise/main/imagens/2026-04-09/XAUUSD_2026-04-09_03-15-05_09ea5.png" class="thumb" alt="XAUUSD_2026-04-09_03-15-05_09ea5.png" loading="lazy">
+                    <span class="thumb-label">15M</span>
+                </a>
+                <a href="https://raw.githubusercontent.com/sergioB79/analise/main/imagens/2026-04-09/XAUUSD_2026-04-09_03-15-09_cae75.png" target="_blank" class="thumb-link">
+                    <img src="https://raw.githubusercontent.com/sergioB79/analise/main/imagens/2026-04-09/XAUUSD_2026-04-09_03-15-09_cae75.png" class="thumb" alt="XAUUSD_2026-04-09_03-15-09_cae75.png" loading="lazy">
+                    <span class="thumb-label">1H</span>
+                </a>
+                <a href="https://raw.githubusercontent.com/sergioB79/analise/main/imagens/2026-04-09/XAUUSD_2026-04-09_03-15-13_68596.png" target="_blank" class="thumb-link">
+                    <img src="https://raw.githubusercontent.com/sergioB79/analise/main/imagens/2026-04-09/XAUUSD_2026-04-09_03-15-13_68596.png" class="thumb" alt="XAUUSD_2026-04-09_03-15-13_68596.png" loading="lazy">
+                    <span class="thumb-label">1D</span>
+                </a></div>
+            <div class="asset-report"># XAU/USD — ANÁLISE CONSOLIDADA MULTI-TF<br>**09 Abr 2026 · 03:15 UTC+1**<br><br>---<br><br>## 1. BIAS GERAL<br>**BEARISH de médio prazo / Recuperação técnica de curto prazo**<br>Convicção: **Média-Alta** no bias vendedor estrutural; **Baixa** na continuação imediata do rally.<br><br>---<br><br>## 2. CONFLUÊNCIAS<br>- Estrutura bearish dominante nos 3 TFs (BOS bearish 1H/1D confirmado)<br>- Rejeição confirmada na zona 4.850–4.900 (OB bearish + EMA 200 1H + resistência 1D)<br>- POC VPVR em 4.658–4.663 como magnete de descida em todos os TFs<br>- CVD negativo e deterioração em 1H e 1D — sem acumulação confirmada<br>- RSI abaixo de 50 no swing/position — momentum vendedor estrutural<br>- ADX 40+ com DI- dominante no 1D confirma tendência bearish activa<br><br>---<br><br>## 3. DIVERGÊNCIAS<br>- 15M mostra CHoCH bullish em formação + EMA 9/21 crossover bullish + preço acima do VWAP de sessão → recuperação técnica local contraria o bias superior<br>- StochRSI 15M em sobrecompra (K=92) — o rally de curto prazo está estendido, não o início de reversão<br><br>---<br><br>## 4. NÍVEIS-CHAVE<br>| Tipo | Nível |<br>|---|---|<br>| Resistência forte | 4.850–4.900 (OB bearish + EMA 200 1H) |<br>| Resistência imediata | 4.715–4.721 (VAH 15M + liquidez) |<br>| Preço actual | ~4.723 |<br>| Suporte pivot | 4.658–4.663 (POC multi-TF) |<br>| Suporte estrutural | 4.580–4.605 (VAL + lows sweepados) |<br>| Target bearish macro | 3.886–4.099 (fundo recente) |<br><br>---<br><br>## 5. SETUPS<br><br>**SCALP (SHORT)** — Prioridade actual<br>- **Entrada:** 4.740–4.760 (rejeição no VAH + zona de liquidez após sweep)<br>- **SL:** 4.780<br>- **TP1:** 4.700 | **TP2:** 4.658<br>- **Activação:** Vela de rejeição bearish no 15M com delta negativo + StochRSI a cruzar abaixo de 80<br><br>**SWING (SHORT)**<br>- **Entrada:** 4.820–4.855 (reteste do OB bearish 1H)<br>- **SL:** 4.905<br>- **TP1:** 4.663 (POC) | **TP2:** 4.580<br>- **Activação:** CHoCH bearish no 1H após nova rejeição confirmada<br><br>**POSITION (BIAS)**<br>- Bear de médio prazo intacto abaixo de 4.850. Sem entrada long estrutural até fecho diário acima de 4.900 + ADX a virar DI+.<br><br>---<br><br>## 6. INVÁLIDO SE<br>- Fecho diário **acima de 4.905** invalida bias bearish swing<br>- 15M short invalida se preço **rompe e fecha acima de 4.780** com delta positivo<br>- CVD reverter para positivo sustentado no 1H altera o bias swing</div>
         </div>
-        <div class="asset-card">
-            <div class="asset-header">
-                <span class="asset-name">GER40</span>
-                <span class="asset-tfs"><span class="pill">15M</span> <span class="pill">4H</span> <span class="pill">1D</span></span>
-            </div>
-            <div class="asset-report"># GER40 — ANÁLISE CONSOLIDADA MULTI-TF<br>**09 Abr 2026 | 01:39 UTC+1**<br><br>---<br><br>## 1. BIAS GERAL<br>**BEARISH** | Convicção: **MÉDIA** *(pullback activo num bear estrutural)*<br>Tendência macro intacta; rally actual é correctivo, não reversão confirmada.<br><br>---<br><br>## 2. CONFLUÊNCIAS<br>- Bear estrutural confirmado nos 3 TFs (BOS bearish, CHoCH não confirmado)<br>- Zona 24.000–24.240 = OB bearish (15M + 4H) + EMA 200 1D + R2 semanal → resistência máxima<br>- CVD negativo em 15M e 4H — rally sem convicção de fluxo real<br>- Preço abaixo de Kumo, EMA 21/50/200 e POC VPVR → estrutura vendedora em múltiplos TFs<br>- Pool de liquidez não varrida em 23.107 actua como magnete inferior<br><br>---<br><br>## 3. DIVERGÊNCIAS<br>- 4H mostra CHoCH bullish potencial + EMA 9/21 cruzadas bullish + RSI 62.71 → momentum de curto prazo favorável aos bulls<br>- Squeeze Momentum 1D em expansão bullish nascente<br>- Preço acima da VWAP AA (4H) e do AVWAP Trimestral — recuperação de valor justo em curso<br>- ⚠️ Contradição real: momentum 4H bullish vs. estrutura 1D/15M bearish dominante<br><br>---<br><br>## 4. NÍVEIS-CHAVE<br>| Nível | Relevância |<br>|-------|-----------|<br>| **24.207–24.240** | Resistência crítica (R2 + OB + Week High) |<br>| **24.119** | EMA 200 1D — linha bull/bear definitiva |<br>| **23.940** | VWAP sessão — equilíbrio imediato |<br>| **23.380** | VAH VPVR — suporte/resistência pivô |<br>| **23.107** | POC + pool liquidez — alvo bearish primário |<br>| **21.850** | Low estrutural absoluto |<br><br>---<br><br>## 5. SETUPS<br><br>### 🔴 SCALP (15M) — SHORT<br>- **Activação:** Rejeição confirmada na zona 24.000–24.120 (vela de reversão + CVD a divergir)<br>- **Entrada:** ~24.000–24.050<br>- **SL:** 24.260 (acima do Week High)<br>- **TP1:** 23.380 | **TP2:** 23.107<br>- **R:R:** ~1:3<br><br>### 🟡 SWING (4H) — AGUARDAR<br>- **Cenário bear:** Falha de quebra em 24.240 + retorno abaixo de 23.391 → short para 22.836/21.850<br>- **Cenário bull:** Fecho 4H acima de 24.240 + reclaim Kumo → invalida bias bearish, aguardar long setup<br>- Não entrar swing sem confirmação estrutural clara<br><br>### ⚫ POSITION (1D) — BIAS SHORT<br>Contexto macro bearish dominante. Sem CHoCH 1D confirmado, qualquer long é contra-tendência de risco elevado. Aguardar.<br><br>---<br><br>## 6. INVÁLIDO SE<br>- Fecho diário **acima de 24.240** com volume → invalida scalp short e reabre swing bull<br>- CVD sessão vira positivo sustentado acima de 24.000<br>- Catalisador macro inesperado (BCE/notícia tarifas) gera gap > 300 pts numa direcção</div>
-        </div>
-<div class="footer">S. Batalha · Chart Analysis Pipeline</div>
+<div class="footer">S. Batalha · Chart Analysis Pipeline · 2026-04-09</div>
 </body>
 </html>
